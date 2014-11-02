@@ -8,7 +8,7 @@ class Person {
     var firstName: String
     var lastName: String
     var student = true
-
+    
 
     init(firstName: String, lastName: String, student: Bool) {
         self.firstName = firstName
@@ -24,9 +24,15 @@ class Person {
     
 }
 
-var Eric = Person(firstName: "Eric", lastName: "Mentele", student: true)
 
-Eric.here()
+func enroll(Student: Person(firstName:String,lastName:String, student:Bool)) {
+    var enroll = Person(firstName: "Eric", lastName: "Mentele", student: true)
+    var enrolled = [""]
+    enrolled.append
+}
+
+
+
 
 
 
