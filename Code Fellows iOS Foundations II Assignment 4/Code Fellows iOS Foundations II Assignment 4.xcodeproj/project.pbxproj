@@ -13,6 +13,8 @@
 		40497FEB1A0EAD6D007021A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40497FEA1A0EAD6D007021A4 /* Images.xcassets */; };
 		40497FEE1A0EAD6D007021A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40497FEC1A0EAD6D007021A4 /* LaunchScreen.xib */; };
 		40497FFA1A0EAD6E007021A4 /* Code_Fellows_iOS_Foundations_II_Assignment_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40497FF91A0EAD6E007021A4 /* Code_Fellows_iOS_Foundations_II_Assignment_4Tests.swift */; };
+		404980091A0EBDC0007021A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404980081A0EBDC0007021A4 /* Person.swift */; };
+		4049800B1A0F1101007021A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049800A1A0F1101007021A4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		40497FF31A0EAD6E007021A4 /* Code Fellows iOS Foundations II Assignment 4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code Fellows iOS Foundations II Assignment 4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40497FF81A0EAD6E007021A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40497FF91A0EAD6E007021A4 /* Code_Fellows_iOS_Foundations_II_Assignment_4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_Fellows_iOS_Foundations_II_Assignment_4Tests.swift; sourceTree = "<group>"; };
+		404980081A0EBDC0007021A4 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4049800A1A0F1101007021A4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				40497FE31A0EAD6D007021A4 /* AppDelegate.swift */,
 				40497FE51A0EAD6D007021A4 /* ViewController.swift */,
 				40497FE71A0EAD6D007021A4 /* Main.storyboard */,
+				404980081A0EBDC0007021A4 /* Person.swift */,
+				4049800A1A0F1101007021A4 /* DetailViewController.swift */,
 				40497FEA1A0EAD6D007021A4 /* Images.xcassets */,
 				40497FEC1A0EAD6D007021A4 /* LaunchScreen.xib */,
 				40497FE11A0EAD6D007021A4 /* Supporting Files */,
@@ -214,7 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40497FE61A0EAD6D007021A4 /* ViewController.swift in Sources */,
+				404980091A0EBDC0007021A4 /* Person.swift in Sources */,
 				40497FE41A0EAD6D007021A4 /* AppDelegate.swift in Sources */,
+				4049800B1A0F1101007021A4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +422,7 @@
 				40497FFF1A0EAD6E007021A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		404980001A0EAD6E007021A4 /* Build configuration list for PBXNativeTarget "Code Fellows iOS Foundations II Assignment 4Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				404980021A0EAD6E007021A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
