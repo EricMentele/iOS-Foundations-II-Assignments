@@ -15,14 +15,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lastnameLabel: UILabel!
     
     //Setup for person to display.
-    var selectedPerson = Person(firstName: "a", lastName: "m", student: true)
     
-    override func viewDidLoad() {
+    var selectedPerson:
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        self.title = "Person"
         self.firstnameLabel.text = self.selectedPerson.firstName
         self.lastnameLabel.text = self.selectedPerson.lastName
-        self.view.backgroundColor = UIColor.blueColor()
     }
     
     
