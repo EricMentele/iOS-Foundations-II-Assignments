@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     //Setup of people array.
-    let people = [Person]()
+    var people = [Person]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         
-        var people = [eric, edward, clint, joseph, brian, adam, ryan, daniel, chantel, david, jeff, brad, scott, denise, michael, patrick, robert, john, lindy, duncan, lance, andrewp, andrewr, doc, stephen, mystery]
+        self.people = [eric, edward, clint, joseph, brian, adam, ryan, daniel, chantel, david, jeff, brad, scott, denise, michael, patrick, robert, john, lindy, duncan, lance, andrewp, andrewr, doc, stephen, mystery]
         
     
         self.tableView.dataSource = self
