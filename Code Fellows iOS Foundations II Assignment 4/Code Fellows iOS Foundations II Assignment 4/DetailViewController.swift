@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lastnameLabel: UILabel!
     
     //Setup for person to display.
-    var selectedPerson = Person(firstName: "John", lastName: "Doe", student: true)
+    var selectedPerson = Person(firstName: "a", lastName: "m", student: true)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,5 @@ class DetailViewController: UIViewController {
         self.view.backgroundColor = UIColor.blueColor()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-   
     
 }

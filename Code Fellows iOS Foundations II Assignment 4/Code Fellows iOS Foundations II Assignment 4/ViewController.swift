@@ -13,18 +13,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     //Setup of people array.
     var people = [Person]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
         
         //People to add to array.
-        let eric = Person(firstName: "Eric", lastName: "Mentele", student: true)
-        let edward = Person(firstName: "Edward", lastName: "Abrahamsen", student: true)
-        let clint = Person(firstName: "Clint", lastName: "Akins", student: true)
-        let joseph = Person(firstName: "Joseph", lastName: "Barnes", student: true)
-        let brian = Person(firstName: "Brian", lastName: "Ledbetter", student: true)
-        let adam = Person(firstName: "Adam", lastName: "Caldwell", student: true)
+        var eric = Person(firstName: "Eric", lastName: "Mentele", student: true)
+        var edward = Person(firstName: "Edward", lastName: "Abrahamsen", student: true)
+        var clint = Person(firstName: "Clint", lastName: "Akins", student: true)
+        var joseph = Person(firstName: "Joseph", lastName: "Barnes", student: true)
+        var brian = Person(firstName: "Brian", lastName: "Ledbetter", student: true)
+        var adam = Person(firstName: "Adam", lastName: "Caldwell", student: true)
         let ryan = Person(firstName: "Ryan", lastName: "Christensen", student: true)
         let daniel = Person(firstName: "Daniel", lastName: "Hour", student: true)
         let chantel = Person(firstName: "Chantel", lastName: "Frizzel", student: true)
@@ -56,11 +55,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
 
-func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
     return self.people.count
     
-}
+    }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CELL", forIndexPath: indexPath) as UITableViewCell
@@ -78,6 +77,9 @@ func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> In
             var personToPass = self.people[selectedIndexPath!.row]
             detailViewController.selectedPerson = personToPass
         }
-    }
-
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+               self.performSegueWithIdentifier("SHOW_DETAIL", sender: self)
+            }
+        }
 }
