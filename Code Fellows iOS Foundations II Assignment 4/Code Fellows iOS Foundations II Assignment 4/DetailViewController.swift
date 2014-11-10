@@ -11,18 +11,19 @@ import UIKit
 class DetailViewController: UIViewController {
     
     //Person's first and last name displayed attributes.
-    @IBOutlet weak var firstnameLabel: UILabel!
-    @IBOutlet weak var lastnameLabel: UILabel!
+    @IBOutlet weak var firstNameLabel: UILabel!
+    
+    @IBOutlet weak var lastNameLabel: UILabel!
     
     //Setup for person to display.
     
-    var selectedPerson:
+    var selectedPerson = Person(firstName: "", lastName: "", student: true)
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.firstnameLabel.text = self.selectedPerson.firstName
-        self.lastnameLabel.text = self.selectedPerson.lastName
+        self.firstNameLabel.text = self.selectedPerson.firstName
+        self.lastNameLabel.text = self.selectedPerson.lastName
     }
     
     

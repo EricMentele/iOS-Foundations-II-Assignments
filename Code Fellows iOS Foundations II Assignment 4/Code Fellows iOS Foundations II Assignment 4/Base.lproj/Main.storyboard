@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="2U1-Xl-GXP" kind="show" id="nKJ-bS-0aX"/>
+                                            <segue destination="2U1-Xl-GXP" kind="show" identifier="SHOW_DETAIL" id="Z3p-c5-kTe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -56,16 +56,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u73-eu-Seb" userLabel="Last">
-                                <rect key="frame" x="292" y="261" width="154" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33M-3S-dA9" userLabel="First">
+                                <rect key="frame" x="16" y="72" width="278" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="30" height="-30"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33M-3S-dA9" userLabel="First">
-                                <rect key="frame" x="130" y="261" width="154" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u73-eu-Seb" userLabel="Last">
+                                <rect key="frame" x="16" y="157" width="278" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="30" height="-30"/>
                             </label>
@@ -73,8 +73,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="firstnameLabel" destination="33M-3S-dA9" id="UFt-u2-mss"/>
-                        <outlet property="lastnameLabel" destination="u73-eu-Seb" id="LAE-0K-3eR"/>
+                        <outlet property="firstNameLabel" destination="33M-3S-dA9" id="SGr-It-yAX"/>
+                        <outlet property="lastNameLabel" destination="u73-eu-Seb" id="iPu-hr-7Rc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSO-ig-uag" userLabel="First Responder" sceneMemberID="firstResponder"/>

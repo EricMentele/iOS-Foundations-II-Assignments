@@ -78,8 +78,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             detailViewController.selectedPerson = personToPass
         }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-               self.performSegueWithIdentifier("SHOW_DETAIL", sender: self)
-            }
         }
 }
