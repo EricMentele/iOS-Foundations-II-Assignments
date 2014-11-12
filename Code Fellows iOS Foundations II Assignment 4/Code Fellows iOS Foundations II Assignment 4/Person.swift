@@ -18,5 +18,10 @@ class Person {
         self.lastName = lastName
         self.student = student
     }
+    init(){
+        self.firstName = "john"
+        self.lastName  = "doe"
+        self.student    = false
+    }
 }
 

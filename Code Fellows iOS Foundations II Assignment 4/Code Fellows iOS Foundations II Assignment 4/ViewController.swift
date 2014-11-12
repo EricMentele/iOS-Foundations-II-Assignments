@@ -49,6 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.people = [eric, edward, clint, joseph, brian, adam, ryan, daniel, chantel, david, jeff, brad, scott, denise, michael, patrick, robert, john, lindy, duncan, lance, andrewp, andrewr, doc, stephen, mystery]
         
+        
     
         self.tableView.dataSource = self
         self.tableView.delegate = self

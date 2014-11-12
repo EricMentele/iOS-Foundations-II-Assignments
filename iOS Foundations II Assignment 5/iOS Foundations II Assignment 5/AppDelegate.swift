@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  iOS Foundations II Assignment 4
+//  iOS Foundations II Assignment 5
 //
-//  Created by Eric Mentele on 11/9/14.
+//  Created by Eric Mentele on 11/11/14.
 //  Copyright (c) 2014 Eric Mentele. All rights reserved.
 //
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "404980161A10558A007021A4"
-               BuildableName = "iOS Foundations II Assignment 4.app"
-               BlueprintName = "iOS Foundations II Assignment 4"
-               ReferencedContainer = "container:iOS Foundations II Assignment 4.xcodeproj">
+               BlueprintIdentifier = "404CEED11A131ACB00F8D4C1"
+               BuildableName = "iOS Foundations II Assignment 5.app"
+               BlueprintName = "iOS Foundations II Assignment 5"
+               ReferencedContainer = "container:iOS Foundations II Assignment 5.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4049802B1A10558A007021A4"
-               BuildableName = "iOS Foundations II Assignment 4Tests.xctest"
-               BlueprintName = "iOS Foundations II Assignment 4Tests"
-               ReferencedContainer = "container:iOS Foundations II Assignment 4.xcodeproj">
+               BlueprintIdentifier = "404CEEE61A131AD000F8D4C1"
+               BuildableName = "iOS Foundations II Assignment 5Tests.xctest"
+               BlueprintName = "iOS Foundations II Assignment 5Tests"
+               ReferencedContainer = "container:iOS Foundations II Assignment 5.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4049802B1A10558A007021A4"
-               BuildableName = "iOS Foundations II Assignment 4Tests.xctest"
-               BlueprintName = "iOS Foundations II Assignment 4Tests"
-               ReferencedContainer = "container:iOS Foundations II Assignment 4.xcodeproj">
+               BlueprintIdentifier = "404CEEE61A131AD000F8D4C1"
+               BuildableName = "iOS Foundations II Assignment 5Tests.xctest"
+               BlueprintName = "iOS Foundations II Assignment 5Tests"
+               ReferencedContainer = "container:iOS Foundations II Assignment 5.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "404980161A10558A007021A4"
-            BuildableName = "iOS Foundations II Assignment 4.app"
-            BlueprintName = "iOS Foundations II Assignment 4"
-            ReferencedContainer = "container:iOS Foundations II Assignment 4.xcodeproj">
+            BlueprintIdentifier = "404CEED11A131ACB00F8D4C1"
+            BuildableName = "iOS Foundations II Assignment 5.app"
+            BlueprintName = "iOS Foundations II Assignment 5"
+            ReferencedContainer = "container:iOS Foundations II Assignment 5.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "404980161A10558A007021A4"
-            BuildableName = "iOS Foundations II Assignment 4.app"
-            BlueprintName = "iOS Foundations II Assignment 4"
-            ReferencedContainer = "container:iOS Foundations II Assignment 4.xcodeproj">
+            BlueprintIdentifier = "404CEED11A131ACB00F8D4C1"
+            BuildableName = "iOS Foundations II Assignment 5.app"
+            BlueprintName = "iOS Foundations II Assignment 5"
+            ReferencedContainer = "container:iOS Foundations II Assignment 5.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "404980161A10558A007021A4"
-            BuildableName = "iOS Foundations II Assignment 4.app"
-            BlueprintName = "iOS Foundations II Assignment 4"
-            ReferencedContainer = "container:iOS Foundations II Assignment 4.xcodeproj">
+            BlueprintIdentifier = "404CEED11A131ACB00F8D4C1"
+            BuildableName = "iOS Foundations II Assignment 5.app"
+            BlueprintName = "iOS Foundations II Assignment 5"
+            ReferencedContainer = "container:iOS Foundations II Assignment 5.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

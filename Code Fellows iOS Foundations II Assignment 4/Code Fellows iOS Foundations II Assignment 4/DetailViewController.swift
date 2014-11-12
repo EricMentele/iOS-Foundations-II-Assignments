@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
     
     //Setup for person to display.
     
-    var selectedPerson = Person(firstName: "", lastName: "", student: true)
+    var selectedPerson = Person()
     
     override func viewDidLoad()
     {
