@@ -52,7 +52,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         let image = info[UIImagePickerControllerEditedImage] as UIImage
         self.imageView.image = image
         self.dismissViewControllerAnimated(true, completion: nil)
-    
+        self.selectedPerson.image = image
     }//imagePickerController
     
     
