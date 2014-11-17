@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Foundations II Assignment 6/ViewController.swift"
+            timestampString = "437866956.517215"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Foundations_II_Assignment_6.ViewController.__deallocating_deinit"
+                  moduleName = "iOS Foundations II Assignment 6"
+                  urlString = "file:///Users/ProgrammerNotProgrammed/Projects/SWIFT/Code%20Fellows%20iOS%20Foundations%20II/Homework/iOS%20Foundations%20II%20Assignment%206/iOS%20Foundations%20II%20Assignment%206/ViewController.swift"
+                  timestampString = "437874856.894083"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc iOS_Foundations_II_Assignment_6.ViewController.__ivar_destroyer"
+                  moduleName = "iOS Foundations II Assignment 6"
+                  urlString = "file:///Users/ProgrammerNotProgrammed/Projects/SWIFT/Code%20Fellows%20iOS%20Foundations%20II/Homework/iOS%20Foundations%20II%20Assignment%206/iOS%20Foundations%20II%20Assignment%206/ViewController.swift"
+                  timestampString = "437874856.894456"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

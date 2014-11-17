@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B26C5C7-1332-4548-94BB-36F6F34A1B9F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS Foundations II Assignment 6</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>370C5DCB6EBB85B3A999F20126FD540B0F9A0FC5</key>
+		<string>https://github.com/EricMentele/iOS-Foundations-II-Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS Foundations II Assignment 6/iOS Foundations II Assignment 6.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>370C5DCB6EBB85B3A999F20126FD540B0F9A0FC5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/EricMentele/iOS-Foundations-II-Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>370C5DCB6EBB85B3A999F20126FD540B0F9A0FC5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>370C5DCB6EBB85B3A999F20126FD540B0F9A0FC5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Homework</string>
+		</dict>
+	</array>
+</dict>
+</plist>
