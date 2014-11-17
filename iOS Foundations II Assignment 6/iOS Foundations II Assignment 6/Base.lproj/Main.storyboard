@@ -57,19 +57,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="human" translatesAutoresizingMaskIntoConstraints="NO" id="7bb-Rw-WSE">
-                                <rect key="frame" x="150" y="162" width="300" height="275"/>
+                                <rect key="frame" x="211" y="72" width="178" height="159"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="275" id="XV0-g5-Weq"/>
-                                    <constraint firstAttribute="width" constant="300" id="dan-Rw-IE4"/>
+                                    <constraint firstAttribute="width" constant="178" id="X3i-Xo-isu"/>
+                                    <constraint firstAttribute="height" constant="159" id="tkL-sN-ci8"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pba-8R-IIe">
-                                <rect key="frame" x="270" y="500" width="60" height="60"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kji-Ly-BVI" userLabel="First Name">
+                                <rect key="frame" x="218" y="239" width="164" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2qF-sa-nHQ"/>
-                                    <constraint firstAttribute="width" constant="60" id="rol-bK-xyR"/>
+                                    <constraint firstAttribute="height" constant="30" id="87a-nv-tpI"/>
+                                    <constraint firstAttribute="width" constant="164" id="s8C-pN-DSc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8z9-hA-crx" userLabel="Last Name">
+                                <rect key="frame" x="218" y="277" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dd5-D2-iY7"/>
+                                    <constraint firstAttribute="width" constant="164" id="KDc-mW-jYv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pba-8R-IIe">
+                                <rect key="frame" x="260" y="315" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9KX-Nm-JsK"/>
+                                    <constraint firstAttribute="width" constant="80" id="Qw0-DT-vWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="62"/>
                                 <state key="normal">
                                     <string key="title">📷
 CAMERA
@@ -82,15 +100,21 @@ Unicode: U+1F4F7 (U+D83D U+DCF7), UTF-8: F0 9F 93 B7</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="klN-HT-3qP" firstAttribute="top" secondItem="pba-8R-IIe" secondAttribute="bottom" constant="40" id="5RK-cL-R5E"/>
-                            <constraint firstItem="klN-HT-3qP" firstAttribute="top" secondItem="pba-8R-IIe" secondAttribute="bottom" constant="40" id="LoO-ts-1ry"/>
-                            <constraint firstAttribute="centerY" secondItem="7bb-Rw-WSE" secondAttribute="centerY" id="TSU-sc-KXL"/>
-                            <constraint firstAttribute="centerX" secondItem="pba-8R-IIe" secondAttribute="centerX" id="dNU-Pc-GLY"/>
-                            <constraint firstAttribute="centerX" secondItem="7bb-Rw-WSE" secondAttribute="centerX" id="lbZ-AD-7XQ"/>
+                            <constraint firstItem="kji-Ly-BVI" firstAttribute="top" secondItem="7bb-Rw-WSE" secondAttribute="bottom" constant="8" id="228-dN-ln5"/>
+                            <constraint firstItem="7bb-Rw-WSE" firstAttribute="top" secondItem="eQ0-tD-HM2" secondAttribute="bottom" constant="8" id="Ky3-bR-e2M"/>
+                            <constraint firstAttribute="centerX" secondItem="kji-Ly-BVI" secondAttribute="centerX" id="RPO-O9-O7q"/>
+                            <constraint firstAttribute="centerX" secondItem="pba-8R-IIe" secondAttribute="centerX" id="UDD-6U-olZ"/>
+                            <constraint firstAttribute="centerX" secondItem="7bb-Rw-WSE" secondAttribute="centerX" id="XnY-2N-svA"/>
+                            <constraint firstAttribute="centerX" secondItem="8z9-hA-crx" secondAttribute="centerX" id="aes-N2-BzJ"/>
+                            <constraint firstItem="8z9-hA-crx" firstAttribute="leading" secondItem="kji-Ly-BVI" secondAttribute="leading" id="ccN-Jd-aWl"/>
+                            <constraint firstItem="8z9-hA-crx" firstAttribute="top" secondItem="kji-Ly-BVI" secondAttribute="bottom" constant="8" id="l6o-v3-6LI"/>
+                            <constraint firstItem="pba-8R-IIe" firstAttribute="top" secondItem="8z9-hA-crx" secondAttribute="bottom" constant="8" id="osP-DJ-Mrq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstNameText" destination="kji-Ly-BVI" id="9xs-0N-zPS"/>
                         <outlet property="imageView" destination="7bb-Rw-WSE" id="WwL-b2-jsQ"/>
+                        <outlet property="lastNameText" destination="8z9-hA-crx" id="ivl-h8-6Bd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyr-yE-V4x" userLabel="First Responder" sceneMemberID="firstResponder"/>

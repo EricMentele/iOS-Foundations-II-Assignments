@@ -11,21 +11,35 @@ import UIKit
 class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var firstNameText: UITextField!
+    @IBOutlet weak var lastNameText: UITextField!
     
+    var selectedPerson = Person()
     var imagePickerController = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.firstNameText.delegate = self
+        self.lastNameText.delegate = self
+        self.title = self.selectedPerson.firstName
+        
     }//viewDidLoad
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }//memory disposal
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }//textField return
+    
     @IBAction func cameraCalled(sender: AnyObject) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
             
-            self.imagePickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.imagePickerController.sourceType = UIImagePickerControllerSourceType.Camera
             self.imagePickerController.delegate = self
             self.imagePickerController.allowsEditing = true
             self.presentViewController(self.imagePickerController, animated: true, completion: nil)
@@ -37,8 +51,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         
         let image = info[UIImagePickerControllerEditedImage] as UIImage
         self.imageView.image = image
-    imagePickerController.dismissViewControllerAnimated(true, completion: nil)
-        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    
     }//imagePickerController
     
     

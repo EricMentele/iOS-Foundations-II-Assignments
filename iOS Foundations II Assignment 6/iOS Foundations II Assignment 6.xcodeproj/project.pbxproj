@@ -415,6 +415,7 @@
 				404C67171A1947C700BCD26A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		404C67181A1947C700BCD26A /* Build configuration list for PBXNativeTarget "iOS Foundations II Assignment 6Tests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				404C671A1A1947C700BCD26A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
