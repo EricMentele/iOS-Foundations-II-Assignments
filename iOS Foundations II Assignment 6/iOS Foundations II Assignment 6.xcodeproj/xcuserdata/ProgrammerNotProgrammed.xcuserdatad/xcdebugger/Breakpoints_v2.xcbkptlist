@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS Foundations II Assignment 6/ViewController.swift"
-            timestampString = "437866956.517215"
+            timestampString = "437972496.167642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
@@ -25,11 +25,11 @@
                   symbolName = "iOS_Foundations_II_Assignment_6.ViewController.__deallocating_deinit"
                   moduleName = "iOS Foundations II Assignment 6"
                   urlString = "file:///Users/ProgrammerNotProgrammed/Projects/SWIFT/Code%20Fellows%20iOS%20Foundations%20II/Homework/iOS%20Foundations%20II%20Assignment%206/iOS%20Foundations%20II%20Assignment%206/ViewController.swift"
-                  timestampString = "437910681.318093"
+                  timestampString = "438067147.082374"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
@@ -39,11 +39,11 @@
                   symbolName = "@objc iOS_Foundations_II_Assignment_6.ViewController.__ivar_destroyer"
                   moduleName = "iOS Foundations II Assignment 6"
                   urlString = "file:///Users/ProgrammerNotProgrammed/Projects/SWIFT/Code%20Fellows%20iOS%20Foundations%20II/Homework/iOS%20Foundations%20II%20Assignment%206/iOS%20Foundations%20II%20Assignment%206/ViewController.swift"
-                  timestampString = "437910681.318324"
+                  timestampString = "438067147.083168"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>

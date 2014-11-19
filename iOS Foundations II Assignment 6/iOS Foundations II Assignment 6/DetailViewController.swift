@@ -22,7 +22,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         self.firstNameText.delegate = self
         self.lastNameText.delegate = self
         self.title = self.selectedPerson.firstName
-        
+        if self.selectedPerson.image != nil{
+            self.imageView.image = selectedPerson.image
+        }
     }//viewDidLoad
     
     
@@ -51,8 +53,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         
         let image = info[UIImagePickerControllerEditedImage] as UIImage
         self.imageView.image = image
-        self.dismissViewControllerAnimated(true, completion: nil)
         self.selectedPerson.image = image
+        if selectedPerson.image === image {
+        println("image has changed")
+    }//if
+    self.dismissViewControllerAnimated(true, completion: nil)
     }//imagePickerController
     
     

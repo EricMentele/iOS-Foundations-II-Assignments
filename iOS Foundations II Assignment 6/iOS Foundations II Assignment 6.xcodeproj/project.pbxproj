@@ -15,6 +15,9 @@
 		404C67121A1947C700BCD26A /* iOS_Foundations_II_Assignment_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C67111A1947C700BCD26A /* iOS_Foundations_II_Assignment_6Tests.swift */; };
 		404C671C1A19491A00BCD26A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C671B1A19491A00BCD26A /* DetailViewController.swift */; };
 		404C671E1A19493000BCD26A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C671D1A19493000BCD26A /* Person.swift */; };
+		404C67241A1A05BC00BCD26A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404C67231A1A05BC00BCD26A /* Photos.framework */; };
+		404C67261A1A0C6F00BCD26A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404C67251A1A0C6F00BCD26A /* UIKit.framework */; };
+		404C67281A1A0C8300BCD26A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404C67271A1A0C8300BCD26A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		404C67111A1947C700BCD26A /* iOS_Foundations_II_Assignment_6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Foundations_II_Assignment_6Tests.swift; sourceTree = "<group>"; };
 		404C671B1A19491A00BCD26A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		404C671D1A19493000BCD26A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		404C67231A1A05BC00BCD26A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		404C67251A1A0C6F00BCD26A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		404C67271A1A0C8300BCD26A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404C67281A1A0C8300BCD26A /* Foundation.framework in Frameworks */,
+				404C67261A1A0C6F00BCD26A /* UIKit.framework in Frameworks */,
+				404C67241A1A05BC00BCD26A /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		404C66ED1A1947C700BCD26A = {
 			isa = PBXGroup;
 			children = (
+				404C67271A1A0C8300BCD26A /* Foundation.framework */,
+				404C67251A1A0C6F00BCD26A /* UIKit.framework */,
+				404C67231A1A05BC00BCD26A /* Photos.framework */,
 				404C66F81A1947C700BCD26A /* iOS Foundations II Assignment 6 */,
 				404C670E1A1947C700BCD26A /* iOS Foundations II Assignment 6Tests */,
 				404C66F71A1947C700BCD26A /* Products */,
