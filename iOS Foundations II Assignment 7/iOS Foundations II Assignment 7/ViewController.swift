@@ -13,11 +13,9 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
     //View Controller properties
     var people = [Person]()
-    
+    var selectedPerson = Person()
     //What is in the view?
     override func viewDidLoad() {
         
@@ -50,15 +48,18 @@ class ViewController: UIViewController, UITableViewDataSource{
         }//loop
     }//Load from plist
     
-    //What is in the cell?
+    //What is in the table?
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("person_cell", forIndexPath: indexPath) as PersonTableViewCell
         var personToDisplay = self.people[indexPath.row]
         cell.nameLabel.text = personToDisplay.firstName
+        cell.subNameLabel.text = personToDisplay.lastName
+        cell.imageView.image = personToDisplay.image
+        
         
         
         return cell
-    }//Cell contents.
+    }//Table contents.
     
     //How many are there?
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int

@@ -8,24 +8,47 @@
 
 import UIKit
 
-class DetailViewController: UINavigationController {
+class DetailViewController: UIViewController, UINavigationControllerDelegate {
     
+    
+    
+    
+    @IBOutlet weak var PersonImageDetail: UIImageView!
+    @IBOutlet weak var FirstNameDetail: UILabel!
+    @IBOutlet weak var LastNameDetail: UILabel!
+    @IBOutlet weak var editPersonView: UIButton!
+    
+    
+    //properties
     var selectedPerson = Person()
     
-    
-    
-    @IBOutlet weak var labelName: UILabel!
-    //properties
-    
-    
     //set up view
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        self.labelName.text = "test"
+        self.FirstNameDetail.text = selectedPerson.firstName
+        self.LastNameDetail.text = selectedPerson.lastName
+        if self.selectedPerson.image != nil{
+            self.PersonImageDetail.image = selectedPerson.image
+        }
+
+        
+    }//view did load
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "person_edit"
+        {
+            let editViewController = segue.destinationViewController as EditViewController
+            var personToPass = self.selectedPerson
+            editViewController.selectedPerson = personToPass
+        }//if segue
     }
+
+
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        //        self.firstNameLabel.text = "test"
-        //        self.lastNameLabel.text = "test2"
-    }
+        
+    }//view will appear
 }//DetailViewController

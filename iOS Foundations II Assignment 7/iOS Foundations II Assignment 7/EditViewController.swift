@@ -10,6 +10,10 @@ import UIKit
 
 class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var firstNameText: UITextField!
+    @IBOutlet weak var lastNameText: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+    
     
     var selectedPerson = Person()
     var imagePickerController = UIImagePickerController()
@@ -66,4 +70,5 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             println("image has changed")
         }//if
         self.dismissViewControllerAnimated(true, completion: nil)
-}//imagePickerController
+    }//imagePickerController
+}//editviewcontroller
