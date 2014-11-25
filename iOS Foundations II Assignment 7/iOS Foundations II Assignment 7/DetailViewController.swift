@@ -8,10 +8,8 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UINavigationControllerDelegate {
-    
-    
-    
+class DetailViewController: UIViewController, UINavigationControllerDelegate
+{
     
     @IBOutlet weak var PersonImageDetail: UIImageView!
     @IBOutlet weak var FirstNameDetail: UILabel!
@@ -20,17 +18,23 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate {
     
     
     //properties
-    var selectedPerson = Person()
+    var selectedPerson : Person?
     
     //set up view
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.FirstNameDetail.text = selectedPerson.firstName
-        self.LastNameDetail.text = selectedPerson.lastName
-        if self.selectedPerson.image != nil{
-            self.PersonImageDetail.image = selectedPerson.image
+        self.FirstNameDetail.text = selectedPerson?.firstName
+        self.LastNameDetail.text = selectedPerson?.lastName
+        if self.selectedPerson?.image != nil
+        {
+            self.PersonImageDetail.image = selectedPerson?.image
         }
+        else
+        {
+            self.PersonImageDetail.image = UIImage(named: "nerd9")
+        
+        }//if self.selectedPerson.image
 
         
     }//view did load
@@ -47,8 +51,23 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate {
 
 
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool)
+    {
         super.viewWillAppear(animated)
         
+        self.FirstNameDetail.text = selectedPerson?.firstName
+        self.LastNameDetail.text = selectedPerson?.lastName
+        if self.selectedPerson?.image != nil
+        {
+            self.PersonImageDetail.image = selectedPerson?.image
+        }
+        else
+        {
+            self.PersonImageDetail.image = UIImage(named: "nerd9")
+            
+        }//if self.selectedPerson.image
+        
     }//view will appear
+    
+    
 }//DetailViewController

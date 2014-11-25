@@ -9,24 +9,61 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+{
     
     @IBOutlet weak var tableView: UITableView!
     
     //View Controller properties
     var people = [Person]()
-    var selectedPerson = Person()
-    //What is in the view?
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        self.tableView.dataSource = self
-        self.loadFromPlist()
-        self.title = "Roster"
-        
-        
-    }//func override view
     
+    //What is in the view?
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        self.title = "Roster"
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
+        if let peopleFromArchive = self.loadFromArchive() as [Person]?
+        {
+            self.people = peopleFromArchive
+        }//peopleFromArchive
+        else
+        {
+            self.loadFromPlist()
+            self.saveToArchive()
+        }//else
+        
+        //self.loadFromPlist()        check
+       
+    
+    }//func override viewDidLoad
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+        self.saveToArchive()        
+    }//viewWillAppear
+
+    func loadFromArchive() -> [Person]?
+    {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        
+        if let peopleFromArchive = NSKeyedUnarchiver.unarchiveObjectWithFile(documentsPath + "/archive1") as? [Person]
+        {
+            return peopleFromArchive
+        }//peopleFromArchive
+        return nil
+    }//loadFromArchive
+    
+    func saveToArchive()
+    {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        NSKeyedArchiver.archiveRootObject(self.people, toFile: documentsPath + "/archive1")
+    }//saveToArchive
+
     func loadFromPlist()
     {
         //set up view of plist bag
@@ -41,8 +78,7 @@ class ViewController: UIViewController, UITableViewDataSource{
             {
                 let firstName = personDictionary["firstName"] as String
                 let lastName = personDictionary["lastName"] as String
-                let student = personDictionary["student"] as Bool
-                var person = Person(firstName: firstName, lastName: lastName, student: student)
+                var person = Person(first: firstName, last: lastName)
                 self.people.append(person)
             }//if let
         }//loop
@@ -54,12 +90,15 @@ class ViewController: UIViewController, UITableViewDataSource{
         var personToDisplay = self.people[indexPath.row]
         cell.nameLabel.text = personToDisplay.firstName
         cell.subNameLabel.text = personToDisplay.lastName
-        cell.imageView.image = personToDisplay.image
-        
+        if personToDisplay.image != nil {
+            cell.personImageView.image = personToDisplay.image
+        } else {
+            cell.personImageView.image = UIImage(named: "nerd9")
+        }
         
         
         return cell
-    }//Table contents.
+    }//TableView.
     
     //How many are there?
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -77,7 +116,8 @@ class ViewController: UIViewController, UITableViewDataSource{
             var personToPass = self.people[selectedIndexPath!.row]
             detailViewController.selectedPerson = personToPass
         }//if segue
-    }
+    }//prepForSegue
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

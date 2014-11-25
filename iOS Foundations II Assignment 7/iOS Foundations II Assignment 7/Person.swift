@@ -9,22 +9,42 @@
 import Foundation
 import UIKit
 
-class Person {
-    var firstName: String
-    var lastName: String
-    var student: Bool
-    var image: UIImage?
+class Person : NSObject, NSCoding {
     
-    init(firstName: String, lastName: String, student: Bool)
+    var firstName : String
+    var lastName : String
+    var image : UIImage?
+    
+    init (first : String, last : String)
     {
-        self.firstName = firstName
-        self.lastName = lastName
-        self.student = student
+        self.firstName = first
+        self.lastName = last
+       
     }
-    init()
+
+    
+    required init(coder aDecoder: NSCoder)
     {
-        self.firstName = "john"
-        self.lastName  = "doe"
-        self.student    = false
+        self.firstName = aDecoder.decodeObjectForKey("firstName") as String
+        self.lastName = aDecoder.decodeObjectForKey("lastName") as String
+        if let decodedImage = aDecoder.decodeObjectForKey("image") as? UIImage
+        {
+            self.image = decodedImage
+        }
     }
+    
+    func encodeWithCoder(aCoder: NSCoder)
+    {
+        aCoder.encodeObject(self.firstName, forKey: "firstName")
+        aCoder.encodeObject(self.lastName, forKey: "lastName")
+        if self.image != nil
+        {
+            aCoder.encodeObject(self.image!, forKey: "image")
+        }
+        else
+        {
+            aCoder.encodeObject(nil, forKey: "image")
+        }
+    }
+    
 }

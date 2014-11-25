@@ -10,11 +10,12 @@
 		406779D61A1C640C00A8CB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406779D51A1C640C00A8CB29 /* AppDelegate.swift */; };
 		406779D81A1C640C00A8CB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406779D71A1C640C00A8CB29 /* ViewController.swift */; };
 		406779DB1A1C640C00A8CB29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406779D91A1C640C00A8CB29 /* Main.storyboard */; };
-		406779DD1A1C640C00A8CB29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406779DC1A1C640C00A8CB29 /* Images.xcassets */; };
 		406779E01A1C640C00A8CB29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406779DE1A1C640C00A8CB29 /* LaunchScreen.xib */; };
 		406779EC1A1C640C00A8CB29 /* iOS_Foundations_II_Assignment_7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406779EB1A1C640C00A8CB29 /* iOS_Foundations_II_Assignment_7Tests.swift */; };
 		406779F91A1C650700A8CB29 /* requirments.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 406779F81A1C650700A8CB29 /* requirments.rtf */; };
 		406779FF1A1C6B5200A8CB29 /* Roster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406779FE1A1C6B5200A8CB29 /* Roster.plist */; };
+		40972A2F1A24373C00BF2590 /* nerd9.png in Resources */ = {isa = PBXBuildFile; fileRef = 40972A2E1A24373C00BF2590 /* nerd9.png */; };
+		40972A311A243D0C00BF2590 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40972A301A243D0C00BF2590 /* Images.xcassets */; };
 		40BD53FA1A1F0BE200CF8B99 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD53F91A1F0BE200CF8B99 /* Person.swift */; };
 		40BD53FC1A1F0C1000CF8B99 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD53FB1A1F0C1000CF8B99 /* PersonTableViewCell.swift */; };
 		40BD53FE1A1F0C5B00CF8B99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BD53FD1A1F0C5B00CF8B99 /* DetailViewController.swift */; };
@@ -37,13 +38,14 @@
 		406779D51A1C640C00A8CB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406779D71A1C640C00A8CB29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		406779DA1A1C640C00A8CB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		406779DC1A1C640C00A8CB29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		406779DF1A1C640C00A8CB29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		406779E51A1C640C00A8CB29 /* iOS Foundations II Assignment 7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Foundations II Assignment 7Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406779EA1A1C640C00A8CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406779EB1A1C640C00A8CB29 /* iOS_Foundations_II_Assignment_7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Foundations_II_Assignment_7Tests.swift; sourceTree = "<group>"; };
 		406779F81A1C650700A8CB29 /* requirments.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = requirments.rtf; sourceTree = "<group>"; };
 		406779FE1A1C6B5200A8CB29 /* Roster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Roster.plist; sourceTree = "<group>"; };
+		40972A2E1A24373C00BF2590 /* nerd9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nerd9.png; sourceTree = "<group>"; };
+		40972A301A243D0C00BF2590 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		40BD53F91A1F0BE200CF8B99 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		40BD53FB1A1F0C1000CF8B99 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		40BD53FD1A1F0C5B00CF8B99 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -137,8 +139,9 @@
 		406779F61A1C644500A8CB29 /* View Layer */ = {
 			isa = PBXGroup;
 			children = (
+				40972A2E1A24373C00BF2590 /* nerd9.png */,
+				40972A301A243D0C00BF2590 /* Images.xcassets */,
 				406779D91A1C640C00A8CB29 /* Main.storyboard */,
-				406779DC1A1C640C00A8CB29 /* Images.xcassets */,
 				406779DE1A1C640C00A8CB29 /* LaunchScreen.xib */,
 				40BD53FB1A1F0C1000CF8B99 /* PersonTableViewCell.swift */,
 			);
@@ -234,11 +237,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40972A2F1A24373C00BF2590 /* nerd9.png in Resources */,
 				406779F91A1C650700A8CB29 /* requirments.rtf in Resources */,
 				406779DB1A1C640C00A8CB29 /* Main.storyboard in Resources */,
+				40972A311A243D0C00BF2590 /* Images.xcassets in Resources */,
 				406779E01A1C640C00A8CB29 /* LaunchScreen.xib in Resources */,
 				406779FF1A1C6B5200A8CB29 /* Roster.plist in Resources */,
-				406779DD1A1C640C00A8CB29 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
